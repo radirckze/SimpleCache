@@ -6,5 +6,4 @@ This is a Visual Studio Code / C# project
 
 [TODO] When cache is full, the cache will pick a random object to evict. Need to add a reasonable eviction policy.
 
-[TODO] For an object in the cache, if the object in the database is updated, the cache still holds onto its copy. I've added the hook but need to add a process that the
-application layer can call to invalidate the cache object.
+[TODO] Objects in the cache do not expire. Need to add an expire policy. Better yet, need to add hooks so the can can be informed via either the DB or the application layer (which may be difficult to do).
