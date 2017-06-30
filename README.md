@@ -4,6 +4,6 @@ This is my testbed for a simple, synchronized cache. The cache allows for multip
 
 This is a Visual Studio Code / C# project
 
-[TODO] When cache is full, the cache will pick a random object to evict. Need to add a reasonable eviction policy.
+[TODO] When cache is full, the cache will pick a random object to evict. Need to add a proper eviction policy. (Use second data structure with last accessed time and evict some % on demand based on least recently used.)
 
-[TODO] Objects in the cache do not expire. Need to add an expire policy. Better yet, need to add hooks so the can can be informed via either the DB or the application layer (which may be difficult to do).
+[TODO] Objects in the cache do not expire. Need to add an expire policy. Better yet, need to add hooks so the cache can be informed via either the DB or the application layer. Need to research topic
